@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+  </head>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+
+var socket = io();
+var newHTML = "";
+var a = 1;
+var b = 10000;
+var isNumber = Math.floor((Math.random() * b) + a);
+socket.emit('chat message', isNumber);
+socket.on('serverAns', (msg, data) => {
+  if (data == "True") {
+    newHTML += '<li>' + msg + ' True </li></br>';
+  } else {
+    if (data == "down") {
+      if (b > msg && msg > a) {
+        newHTML += '<li>Number ' + msg + ' is to big </li></br>';
+        b = msg;
+      };
+      console.log("a:" + a + " b: " + b);
+      socket.emit('chat message', Math.floor((Math.random() * ( b - a + 1)) + a));
+
+    } else if (data == "up") {
+      if (a < msg && msg < b) {
+        newHTML += '<li>Number ' + msg + ' is to small </li></br>';
+        a = msg;
+      };
+      socket.emit('chat message', Math.floor((Math.random() * ( b - a + 1)) + a));
+
+    };
+
+  }
+  var myUl = document.getElementById("messages");
+  myUl.innerHTML = newHTML;
+});
+
+</script>
+  <body>
+    <ul id="messages"></ul>
+
+  </body>
+</html>
