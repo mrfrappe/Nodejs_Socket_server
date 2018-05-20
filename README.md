@@ -4,12 +4,12 @@ recrut task Nodejs Server-Client
 
 ![Screenshot](https://i.imgur.com/kOFq1b0.jpg)
 
-1. Create client-server aplication. Nodejs for server site.
-2. Possible technology stack: HTML/CSS/JS (with frameworks).
-3. After run server generate random number (range 1-10000), save it and not send to the client.
-4. Client side aplication should guess generated number (without human contribution). 
-5. Client should show comunication history beetwen server.
-6. Server can send information to client when number is bigger, lower or equal.
+  1. Create client-server aplication. Nodejs for server site.
+  2. Possible technology stack: HTML/CSS/JS (with frameworks).
+  3. After run server generate random number (range 1-10000), save it and not send to the client.
+  4. Client side aplication should guess generated number (without human contribution). 
+  5. Client should show comunication history beetwen server.
+  6. Server can send information to client when number is bigger, lower or equal.
 
 ## Built With
 
