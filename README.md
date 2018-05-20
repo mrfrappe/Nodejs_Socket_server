@@ -16,7 +16,7 @@ recrut task Nodejs Server-Client
 * [Nodejs 8.11](https://nodejs.org/dist/latest-v8.x/docs/api/) - JavaScript run-time environment
 * [Express 4.16](https://expressjs.com/en/4x/api.html) - Nodejs Framework
 * [Bootstrap 4.1](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - HTML and CSS Framework
-* [Socket.io](https://socket.io//) - Javascript Socket Framework
+* [Socket.io 2.0](https://socket.io//) - Javascript Socket Framework
 
 
 ## Authors
