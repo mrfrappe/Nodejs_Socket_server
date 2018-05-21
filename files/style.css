@@ -1,18 +1,22 @@
 body {
-  background-color: #406e8e;
+    background-color: #406e8e;
 }
+
 .main-box {
-  text-align: center;
-  width: 800px;
-  height: 800px;
-  background-color: #23395b;
-  margin-top: 50px;
-  overflow-y: scroll;;
+    text-align: center;
+    width: 800px;
+    height: 800px;
+    background-color: #23395b;
+    margin-top: 50px;
+    overflow-y: scroll;
+    ;
 }
+
 ul {
-  list-style-type: none;
-  margin-top: 30px;
+    list-style-type: none;
+    margin-top: 30px;
 }
+
 ul li {
-  color: #98afc8;
+    color: #98afc8;
 }
